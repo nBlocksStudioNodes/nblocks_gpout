@@ -11,7 +11,7 @@ public:
     void triggerInput(uint32_t inputNumber, uint32_t value);
 private:
     DigitalInOut _out;
-    const char  _mode;
+    PinMode  _mode;
 };
 
 
