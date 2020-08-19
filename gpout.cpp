@@ -9,8 +9,8 @@ nBlock_GPOUT::nBlock_GPOUT(PinName pinOut, PinMode  modeString, int preset): _ou
     _out = _preset;
     return;
 }
-void nBlock_GPOUT::triggerInput(uint32_t inputNumber, uint32_t value) {
-    _out = (value)? 1 : 0;
+void nBlock_GPOUT::triggerInput(nBlocks_Message message) {
+    _out = (message.intValue)? 1 : 0;
 }
 
 
